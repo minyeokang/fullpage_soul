@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "LeferiPoint-SpecialItalicA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -206,7 +207,6 @@ body {
   transition: transform 2s;
 }
 
-
 #main_visual.active {
   animation: mv_bg 2s 0.5s;
 }
@@ -240,7 +240,6 @@ body {
     font-size: 2rem;
   }
 }
-
 
 #about .inner {
   width: 100%;
@@ -277,7 +276,7 @@ body {
 #about .poster {
   width: calc(100% / 3);
   border-right: 5px solid rgba(255, 255, 255, 0.3);
-  padding-right: 5.208%;
+  padding: 0 5.208%;
 }
 
 #about .poster img {
@@ -298,7 +297,6 @@ body {
 }
 
 @media (max-width: 1750px) {
-
   #about .intro_info table th,
   #about .intro_info table td {
     font-size: 1.5rem;
@@ -336,11 +334,10 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   #about .inner {
-    display: block;
+    flex-direction: column;
   }
-
   #about .poster {
     border-right: none;
     border-bottom: 5px solid rgba(255, 255, 255, 0.3);
@@ -369,22 +366,17 @@ body {
 }
 
 #cast .subc img {
-  margin: 0 80px;
+  width: 100%;
 }
 
 #cast .subc p {
-  padding-top: 30px;
-  font-size: 2.5rem;
+  padding-top: 15px;
+  font-size: 2rem;
 }
 
 #cast .subc1 {
-  position: relative;
-}
-
-#cast .subc1 p {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  margin: 0 30px;
 }
 
 #cast dt {
@@ -401,16 +393,6 @@ body {
 
 #cast.active .subc {
   animation: fadeUp 2s;
-}
-
-@media (max-width: 1700px) {
-  #cast .subc img {
-    width: 100%;
-  }
-
-  #cast .subc1 p {
-    transform: translateX(0);
-  }
 }
 
 @media (max-width: 1280px) {
@@ -489,7 +471,6 @@ body {
 }
 
 @media (max-width: 1700px) {
-
   #media .fp-arrow.fp-prev,
   #media .fp-arrow.fp-next {
     display: none;
@@ -519,7 +500,6 @@ body {
 #gallery .row div img {
   width: 100%;
 }
-
 
 #footer .inner {
   width: 100%;
