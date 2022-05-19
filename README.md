@@ -1,9 +1,5 @@
-## Responsive Website *Soul*
+## Fullscreen scrolling Website *Soul*
 
-### Function
-
-* using Fullpage.js
-
-
+Using Fullpage.js
 
 Click [here](https://minyeokang.github.io/fullpage_soul/) to visit this website 
